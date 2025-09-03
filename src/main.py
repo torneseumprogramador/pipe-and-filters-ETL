@@ -1,5 +1,6 @@
 """
 Arquivo principal que demonstra o uso da arquitetura Pipes and Filters.
+Demonstra o pipeline básico de processamento de texto usando dados estáticos.
 """
 
 from pipes.pipeline import create_text_processing_pipeline, create_custom_pipeline
@@ -11,14 +12,12 @@ from filters.text_filters import (
 )
 
 
-def generate_sample_data() -> list[str]:
-    """
-    Gera dados de exemplo para demonstrar o pipeline.
+def demonstrate_pipeline():
+    """Demonstra o uso do pipeline de processamento de texto."""
+    print("=== Demonstração da Arquitetura Pipes and Filters ===\n")
     
-    Returns:
-        Lista de strings com dados variados para processamento
-    """
-    return [
+    # Dados de exemplo estáticos para demonstração
+    input_data = [
         "  123  ",
         "  abc  ",
         "  456  ",
@@ -35,14 +34,7 @@ def generate_sample_data() -> list[str]:
         "  400  ",
         "  500  "
     ]
-
-
-def demonstrate_pipeline():
-    """Demonstra o uso do pipeline de processamento de texto."""
-    print("=== Demonstração da Arquitetura Pipes and Filters ===\n")
     
-    # Dados de entrada
-    input_data = generate_sample_data()
     print(f"Dados de entrada ({len(input_data)} itens):")
     print(f"  {input_data}\n")
     
@@ -77,7 +69,25 @@ def demonstrate_step_by_step():
     """Demonstra cada etapa do pipeline separadamente."""
     print("\n=== Demonstração Passo a Passo ===\n")
     
-    input_data = generate_sample_data()
+    # Dados de exemplo estáticos
+    input_data = [
+        "  123  ",
+        "  abc  ",
+        "  456  ",
+        "  789  ",
+        "  def  ",
+        "  12   ",
+        "  34   ",
+        "  56   ",
+        "  78   ",
+        "  90   ",
+        "  100  ",
+        "  200  ",
+        "  300  ",
+        "  400  ",
+        "  500  "
+    ]
+    
     print(f"Dados originais: {input_data}\n")
     
     # Etapa 1: Remover espaços extras
@@ -103,14 +113,31 @@ def demonstrate_step_by_step():
     print(f"Resultado final: {step4}")
 
 
+def show_usage_info():
+    """Mostra informações sobre como usar o projeto."""
+    print("\n=== Informações de Uso ===\n")
+    print("Este arquivo demonstra o pipeline básico de processamento de texto.")
+    print("Para análise de comentários sociais, use:")
+    print("  - make social-analysis     # Análise básica")
+    print("  - make analysis-quick      # Estatísticas rápidas")
+    print("  - make analysis-report     # Relatório completo com gráficos")
+    print("  - make notebook            # Jupyter Notebook interativo")
+    print("\nPara gerar dados simulados:")
+    print("  - make generate-data       # 100 comentários")
+    print("  - make generate-data-small # 20 comentários")
+    print("  - make generate-data-large # 500 comentários")
+
+
 if __name__ == "__main__":
     try:
         demonstrate_pipeline()
         demonstrate_step_by_step()
+        show_usage_info()
         
         print("\n=== Pipeline executado com sucesso! ===")
         print("Este exemplo demonstra como a arquitetura Pipes and Filters")
         print("permite processar dados de forma modular e eficiente.")
+        print("\n💡 Para análise de dados reais, use os comandos make listados acima.")
         
     except Exception as e:
         print(f"Erro durante a execução: {e}")
