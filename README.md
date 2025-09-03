@@ -7,6 +7,12 @@
 
 Este projeto demonstra a implementação da arquitetura **Pipes and Filters** em Python, usando geradores para processamento lazy de dados, aplicada à análise de comentários em redes sociais.
 
+## 🏗️ Arquitetura do Sistema
+
+![Arquitetura Pipes and Filters](image.png)
+
+*Diagrama mostrando o fluxo de dados através dos filtros e pipes*
+
 ## 📍 Repositório
 
 - **GitHub**: [https://github.com/torneseumprogramador/pipe-and-filters-ETL](https://github.com/torneseumprogramador/pipe-and-filters-ETL)
