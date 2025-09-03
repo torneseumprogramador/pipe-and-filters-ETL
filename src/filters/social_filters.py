@@ -249,3 +249,101 @@ def add_text_metrics(data: Iterator[Dict[str, Any]]) -> Iterator[Dict[str, Any]]
                 'uppercase_count': uppercase_count
             }
             yield enhanced_comment
+
+
+def get_top_users_by_comments(data: Iterator[Dict[str, Any]], top_n: int = 10) -> Iterator[Dict[str, Any]]:
+    """
+    Extrai os X usuários que mais comentaram.
+    
+    Args:
+        data: Iterador de dicionários de comentários
+        top_n: Número de usuários top a retornar
+        
+    Yields:
+        Dicionários com nome do usuário e quantidade de comentários
+    """
+    # Coleta todos os comentários para análise
+    comments_list = list(data)
+    
+    # Conta comentários por usuário
+    user_comment_counts = {}
+    for comment in comments_list:
+        if isinstance(comment, dict):
+            # Tenta diferentes campos possíveis para o nome do usuário
+            user_name = comment.get('user_name') or comment.get('user') or comment.get('username') or 'Usuário Desconhecido'
+            
+            if user_name in user_comment_counts:
+                user_comment_counts[user_name] += 1
+            else:
+                user_comment_counts[user_name] = 1
+    
+    # Ordena usuários por quantidade de comentários (decrescente)
+    sorted_users = sorted(user_comment_counts.items(), key=lambda x: x[1], reverse=True)
+    
+    # Retorna os top N usuários com formato simplificado
+    for user_name, comment_count in sorted_users[:top_n]:
+        yield {
+            'nome': user_name,
+            'quantidade_comentario': comment_count
+        }
+
+
+def get_user_engagement_summary(data: Iterator[Dict[str, Any]], top_n: int = 10) -> Iterator[Dict[str, Any]]:
+    """
+    Cria um resumo completo de engajamento dos usuários top.
+    
+    Args:
+        data: Iterador de dicionários de comentários
+        top_n: Número de usuários top a analisar
+        
+    Yields:
+        Dicionários com resumo completo de cada usuário top
+    """
+    # Coleta todos os comentários para análise
+    comments_list = list(data)
+    
+    # Agrupa comentários por usuário
+    user_comments = {}
+    for comment in comments_list:
+        if isinstance(comment, dict):
+            user_name = comment.get('user_name') or comment.get('user') or comment.get('username') or 'Usuário Desconhecido'
+            
+            if user_name not in user_comments:
+                user_comments[user_name] = []
+            user_comments[user_name].append(comment)
+    
+    # Calcula estatísticas para cada usuário
+    user_stats = []
+    for user_name, user_comment_list in user_comments.items():
+        total_likes = sum(comment.get('likes', 0) for comment in user_comment_list)
+        avg_likes = total_likes / len(user_comment_list) if user_comment_list else 0
+        
+        # Conta sentimentos
+        sentiments = [comment.get('sentiment', 'neutral') for comment in user_comment_list]
+        positive_count = sentiments.count('positive')
+        negative_count = sentiments.count('negative')
+        neutral_count = sentiments.count('neutral')
+        
+        # Calcula score de engajamento médio
+        engagement_scores = [comment.get('engagement_score', 0) for comment in user_comment_list]
+        avg_engagement = sum(engagement_scores) / len(engagement_scores) if engagement_scores else 0
+        
+        user_stats.append({
+            'user_name': user_name,
+            'comment_count': len(user_comment_list),
+            'total_likes': total_likes,
+            'avg_likes': round(avg_likes, 2),
+            'positive_comments': positive_count,
+            'negative_comments': negative_count,
+            'neutral_comments': neutral_count,
+            'avg_engagement_score': round(avg_engagement, 2)
+        })
+    
+    # Ordena por quantidade de comentários
+    sorted_stats = sorted(user_stats, key=lambda x: x['comment_count'], reverse=True)
+    
+    # Retorna os top N usuários com estatísticas completas
+    for i, stats in enumerate(sorted_stats[:top_n], 1):
+        stats['rank'] = i
+        stats['percentage'] = round((stats['comment_count'] / len(comments_list)) * 100, 2)
+        yield stats

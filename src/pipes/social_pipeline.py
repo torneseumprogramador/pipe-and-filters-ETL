@@ -13,7 +13,9 @@ from filters.social_filters import (
     add_engagement_score,
     detect_spam,
     normalize_user_names,
-    add_text_metrics
+    add_text_metrics,
+    get_top_users_by_comments,
+    get_user_engagement_summary
 )
 
 
@@ -85,6 +87,22 @@ class SocialCommentPipeline(Pipeline):
         """Adiciona métricas de texto."""
         self.add_filter(add_text_metrics)
         return self
+    
+    def add_user_analysis(self, top_n: int = 10) -> 'SocialCommentPipeline':
+        """Adiciona análise de usuários top."""
+        def user_analysis_filter(data):
+            return get_top_users_by_comments(data, top_n)
+        
+        self.add_filter(user_analysis_filter)
+        return self
+    
+    def add_user_engagement_analysis(self, top_n: int = 10) -> 'SocialCommentPipeline':
+        """Adiciona análise completa de engajamento dos usuários top."""
+        def user_engagement_filter(data):
+            return get_user_engagement_summary(data, top_n)
+        
+        self.add_filter(user_engagement_filter)
+        return self
 
 
 def create_basic_social_pipeline() -> SocialCommentPipeline:
@@ -98,6 +116,39 @@ def create_basic_social_pipeline() -> SocialCommentPipeline:
             .add_text_cleaning()
             .add_user_normalization()
             .add_text_metrics())
+
+
+def create_user_analysis_pipeline(top_n: int = 10) -> SocialCommentPipeline:
+    """
+    Cria um pipeline especializado para análise de usuários top.
+    
+    Args:
+        top_n: Número de usuários top a analisar
+        
+    Returns:
+        Pipeline configurado para análise de usuários
+    """
+    return (SocialCommentPipeline()
+            .add_text_cleaning()
+            .add_user_normalization()
+            .add_user_analysis(top_n))
+
+
+def create_user_engagement_pipeline(top_n: int = 10) -> SocialCommentPipeline:
+    """
+    Cria um pipeline especializado para análise completa de engajamento dos usuários top.
+    
+    Args:
+        top_n: Número de usuários top a analisar
+        
+    Returns:
+        Pipeline configurado para análise de engajamento de usuários
+    """
+    return (SocialCommentPipeline()
+            .add_text_cleaning()
+            .add_user_normalization()
+            .add_engagement_analysis()
+            .add_user_engagement_analysis(top_n))
 
 
 def create_sentiment_analysis_pipeline() -> SocialCommentPipeline:

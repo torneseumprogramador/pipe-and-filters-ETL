@@ -88,7 +88,7 @@ generate-data-small: ## Gera dataset pequeno para testes rápidos
 
 generate-data-large: ## Gera dataset grande para demonstrações
 	@echo "$(GREEN)📊 Gerando dataset grande...$(NC)"
-	cd $(DATA_DIR) && $(PYTHON) generator.py -n 150000
+	cd $(DATA_DIR) && $(PYTHON) generator.py -n 15000
 	@echo "$(GREEN)✅ Dataset grande gerado!$(NC)"
 
 basic-demo: ## Executa demonstração básica do pipeline
