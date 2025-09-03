@@ -1,0 +1,452 @@
+[
+  {
+    "post_id": "post_0001",
+    "user": "Ama Watanabe",
+    "country": "Austrália",
+    "state": "Austrália Ocidental",
+    "likes": 124,
+    "text": "¡Me encantó el contenido, excelente trabajo!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0002",
+    "user": "Jin-woo Pérez",
+    "country": "México",
+    "state": "Chihuahua",
+    "likes": 80,
+    "text": "Incroyable ! Je partage avec mes amis.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0003",
+    "user": "Ava Wang",
+    "country": "Canadá",
+    "state": "Colúmbia Britânica",
+    "likes": 170,
+    "text": "¡Sensacional! Mejor publicación que vi hoy.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0004",
+    "user": "Isabella Meyer",
+    "country": "Argentina",
+    "state": "Mendoza",
+    "likes": 129,
+    "text": "Didn't like it at all, very weak.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0005",
+    "user": "William Souza",
+    "country": "Estados Unidos",
+    "state": "Texas",
+    "likes": 117,
+    "text": "Muito bom trabalho, continue assim!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0006",
+    "user": "Valentina López",
+    "country": "Coreia do Sul",
+    "state": "Seul",
+    "likes": 83,
+    "text": "Incredible! Sharing with my friends.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0007",
+    "user": "James Schmidt",
+    "country": "África do Sul",
+    "state": "Cabo Oriental",
+    "likes": 61,
+    "text": "Muito decepcionante, esperava mais.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0008",
+    "user": "Ella Ferrari",
+    "country": "França",
+    "state": "Nova Aquitânia",
+    "likes": 120,
+    "text": "Vraiment mauvais, je n'ai pas aimé.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0009",
+    "user": "Sophie González",
+    "country": "Itália",
+    "state": "Sicília",
+    "likes": 63,
+    "text": "Excellent work, keep it up!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0010",
+    "user": "Greta Garcia",
+    "country": "Nigéria",
+    "state": "Port Harcourt",
+    "likes": 189,
+    "text": "Schrecklicher Inhalt, empfehle ich nicht.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0011",
+    "user": "Chloe Santos",
+    "country": "Coreia do Sul",
+    "state": "Seul",
+    "likes": 48,
+    "text": "Ausgezeichneter Beitrag! Sehr informativ und nützlich.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0012",
+    "user": "Tao Oliveira",
+    "country": "Japão",
+    "state": "Yokohama",
+    "likes": 165,
+    "text": "Was für eine Zeitverschwendung, das zu lesen.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0013",
+    "user": "Abena Fernández",
+    "country": "França",
+    "state": "Île-de-France",
+    "likes": 130,
+    "text": "Não gostei nada, muito fraco.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0014",
+    "user": "Luis Huang",
+    "country": "México",
+    "state": "Puebla",
+    "likes": 189,
+    "text": "Que post sem graça, muito chato.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0015",
+    "user": "Mariana Yoon",
+    "country": "Brasil",
+    "state": "Bahia",
+    "likes": 47,
+    "text": "No me gustó nada, muy débil.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0016",
+    "user": "Ana Harris",
+    "country": "Canadá",
+    "state": "Alberta",
+    "likes": 3,
+    "text": "¡Excelente publicación! Muy informativa y útil.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0017",
+    "user": "André García",
+    "country": "Argentina",
+    "state": "Mendoza",
+    "likes": 33,
+    "text": "Incroyable ! Je partage avec mes amis.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0018",
+    "user": "Soo-jin Patel",
+    "country": "França",
+    "state": "Auvergne-Rhône-Alpes",
+    "likes": 118,
+    "text": "Sensationnel ! Meilleure publication que j'ai vue aujourd'hui.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0019",
+    "user": "Jin-woo Rodríguez",
+    "country": "Nigéria",
+    "state": "Lagos",
+    "likes": 82,
+    "text": "Quelle mauvaise publication, j'ai perdu mon temps.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0020",
+    "user": "Klaus Ibrahim",
+    "country": "Austrália",
+    "state": "Austrália Ocidental",
+    "likes": 35,
+    "text": "Sensationnel ! Meilleure publication que j'ai vue aujourd'hui.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0021",
+    "user": "Sofia Jones",
+    "country": "Reino Unido",
+    "state": "Escócia",
+    "likes": 83,
+    "text": "Quel contenu incroyable, félicitations !",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0022",
+    "user": "Helena Saleh",
+    "country": "Egito",
+    "state": "Port Said",
+    "likes": 82,
+    "text": "Perfect! Exactly what I was looking for.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0023",
+    "user": "Ana Rodríguez",
+    "country": "Austrália",
+    "state": "Austrália Ocidental",
+    "likes": 148,
+    "text": "Ich verstehe nicht, wie jemand das mögen kann.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0024",
+    "user": "Noah Ito",
+    "country": "Coreia do Sul",
+    "state": "Incheon",
+    "likes": 179,
+    "text": "Excellente publication ! Très informative et utile.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0025",
+    "user": "Ana Silva",
+    "country": "França",
+    "state": "Île-de-France",
+    "likes": 62,
+    "text": "Très bien expliqué, merci de partager !",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0026",
+    "user": "Lucia Ali",
+    "country": "Índia",
+    "state": "Tamil Nadu",
+    "likes": 28,
+    "text": "Muy mal hecho, necesita mejorar.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0027",
+    "user": "Aisha Pérez",
+    "country": "Coreia do Sul",
+    "state": "Seul",
+    "likes": 67,
+    "text": "Terrible content, don't recommend.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0028",
+    "user": "John Ito",
+    "country": "Egito",
+    "state": "Shubra El Kheima",
+    "likes": 167,
+    "text": "Was für ein schlechter Beitrag, ich habe meine Zeit verschwendet.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0029",
+    "user": "Mariana Thomas",
+    "country": "Itália",
+    "state": "Piemonte",
+    "likes": 68,
+    "text": "Was für ein wunderbarer Beitrag, ich habe heute viel gelernt!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0030",
+    "user": "David Suzuki",
+    "country": "Egito",
+    "state": "Cairo",
+    "likes": 73,
+    "text": "Très décevant, j'en attendais plus.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0031",
+    "user": "Luis Nakamura",
+    "country": "México",
+    "state": "Jalisco",
+    "likes": 40,
+    "text": "J'ai adoré le contenu, excellent travail !",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0032",
+    "user": "Adwoa Liu",
+    "country": "Alemanha",
+    "state": "Renânia do Norte-Vestfália",
+    "likes": 122,
+    "text": "Terrible content, don't recommend.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0033",
+    "user": "Li Miller",
+    "country": "Índia",
+    "state": "Uttar Pradesh",
+    "likes": 46,
+    "text": "Incredible! Sharing with my friends.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0034",
+    "user": "Klaus Ito",
+    "country": "França",
+    "state": "Île-de-France",
+    "likes": 3,
+    "text": "What weak content, doesn't add anything.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0035",
+    "user": "Ella Jung",
+    "country": "China",
+    "state": "Shenzhen",
+    "likes": 189,
+    "text": "Ich liebe den Inhalt, großartige Arbeit!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0036",
+    "user": "Akua Rodrigues",
+    "country": "Canadá",
+    "state": "Colúmbia Britânica",
+    "likes": 91,
+    "text": "Very well explained, thanks for sharing!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0037",
+    "user": "Mohammed Wilson",
+    "country": "Portugal",
+    "state": "Lisboa",
+    "likes": 158,
+    "text": "What weak content, doesn't add anything.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0038",
+    "user": "Vikram Wu",
+    "country": "Coreia do Sul",
+    "state": "Incheon",
+    "likes": 105,
+    "text": "Adorei o conteúdo, parabéns pela qualidade!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0039",
+    "user": "Carlos Martínez",
+    "country": "Argentina",
+    "state": "Córdoba",
+    "likes": 0,
+    "text": "Très bon travail, continuez comme ça !",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0040",
+    "user": "Wolfgang García",
+    "country": "França",
+    "state": "Auvergne-Rhône-Alpes",
+    "likes": 4,
+    "text": "Was für eine Zeitverschwendung, das zu lesen.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0041",
+    "user": "Fernando Rodríguez",
+    "country": "África do Sul",
+    "state": "Cabo Ocidental",
+    "likes": 111,
+    "text": "Fantastisch! Ich folge bereits für mehr Inhalt.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0042",
+    "user": "Sofia Schneider",
+    "country": "Índia",
+    "state": "Maharashtra",
+    "likes": 91,
+    "text": "Wirklich schlecht, hat mir nicht gefallen.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0043",
+    "user": "Luis Pereira",
+    "country": "Índia",
+    "state": "Tamil Nadu",
+    "likes": 144,
+    "text": "Je n'ai pas aimé du tout, très faible.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0044",
+    "user": "Isabella Sarpong",
+    "country": "Espanha",
+    "state": "Catalunha",
+    "likes": 2,
+    "text": "Excelente post! Muito informativo e útil.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0045",
+    "user": "Fernando Pérez",
+    "country": "Argentina",
+    "state": "Córdoba",
+    "likes": 50,
+    "text": "Hat mir gar nicht gefallen, sehr schwach.",
+    "sentiment": "negative"
+  },
+  {
+    "post_id": "post_0046",
+    "user": "Alessandro Wu",
+    "country": "Alemanha",
+    "state": "Renânia do Norte-Vestfália",
+    "likes": 140,
+    "text": "Was für ein unglaublicher Inhalt, Glückwunsch!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0047",
+    "user": "Hans Liu",
+    "country": "México",
+    "state": "Chihuahua",
+    "likes": 191,
+    "text": "Fantastisch! Ich folge bereits für mehr Inhalt.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0048",
+    "user": "Sophie Thomas",
+    "country": "Egito",
+    "state": "Cairo",
+    "likes": 30,
+    "text": "¡Excelente publicación! Muy informativa y útil.",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0049",
+    "user": "Vikram Rodrigues",
+    "country": "Espanha",
+    "state": "Valência",
+    "likes": 152,
+    "text": "Que post maravilhoso, aprendi muito hoje!",
+    "sentiment": "positive"
+  },
+  {
+    "post_id": "post_0050",
+    "user": "Li Park",
+    "country": "Coreia do Sul",
+    "state": "Seul",
+    "likes": 175,
+    "text": "Très bon travail, continuez comme ça !",
+    "sentiment": "positive"
+  }
+]
