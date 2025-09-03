@@ -1,6 +1,18 @@
-# Pipes and Filters - Arquitetura de Software
+# 🚀 Pipes and Filters - Análise de Comentários Sociais
 
-Este projeto demonstra a implementação da arquitetura **Pipes and Filters** em Python, usando geradores para processamento lazy de dados.
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/torneseumprogramador/pipe-and-filters-ETL)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Make](https://img.shields.io/badge/Make-Automation-orange?style=for-the-badge)](https://www.gnu.org/software/make/)
+
+Este projeto demonstra a implementação da arquitetura **Pipes and Filters** em Python, usando geradores para processamento lazy de dados, aplicada à análise de comentários em redes sociais.
+
+## 📍 Repositório
+
+- **GitHub**: [https://github.com/torneseumprogramador/pipe-and-filters-ETL](https://github.com/torneseumprogramador/pipe-and-filters-ETL)
+- **Clone**: `git clone https://github.com/torneseumprogramador/pipe-and-filters-ETL.git`
+- **Issues**: [Reportar bugs ou sugerir features](https://github.com/torneseumprogramador/pipe-and-filters-ETL/issues)
+- **Contribuições**: [Guia de contribuição](CONTRIBUTING.md)
 
 ## 📚 O que é Pipes and Filters?
 
